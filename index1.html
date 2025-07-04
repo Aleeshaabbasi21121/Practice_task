@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table works</title>
+</head>
+<body>
+    <style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+.flex-container {
+  display: flex;
+  background-color: rgb(59, 111, 66);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.flex-container1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(30, 225, 255);
+}
+
+.flex-container1 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+</style>
+    <h2>The elements define table headers</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>F Name</th>
+    <th>Email</th>
+    <th>City</th>
+    <th>Contact No</th>
+
+
+  </tr>
+  <tr>
+    <td>Ali</td>
+    <td>Khan</td>
+    <td>alikhan@gmail.com</td>
+    <td>Haripur</td>
+    <td>03445467865</td>
+  </tr>
+  <tr>
+    <td>Habib</td>
+    <td>Abbasi</td>
+    <td>habibabbasi23n@gmail.com</td>
+    <td>Abbottabad</td>
+    <td>03102675431</td>
+  </tr>
+    <tr>
+    <td>Saif</td>
+    <td>Azam</td>
+    <td>saifikhan56@gmail.com</td>
+    <td>karachi</td>
+    <td>03158776523</td>
+  </tr>
+    <tr>
+    <td>Uzair</td>
+    <td>Ali</td>
+    <td>uzairali9923n@gmail.com</td>
+    <td>Multan</td>
+    <td>03446387654</td>
+  </tr>
+
+
+</table>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+  <div>Aleesha</div>
+  <div>Habib</div>
+  <div>Ali</div>  
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+<h1>The flex-direction Property</h1>
+
+<p>flex-direction: column; stacks the flex items vertically (from top to bottom):</p>
+
+<div class="flex-container1">
+  <div>Ali</div>
+  <div>Aleesha</div>
+  <div>Habib</div>  
+</div>
+
+
+
+
+
+</body>
+</html>
